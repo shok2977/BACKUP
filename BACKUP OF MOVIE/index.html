@@ -1,0 +1,59 @@
+<html lang="en">
+  hi
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <title>Zyro movies</title>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="logo-container">
+                <h1 class="logo"><a href="index.html" style="color: inherit; text-decoration: none;">
+                    ZyroMovies
+                  </a>
+            </div>
+            <div class="search-container">
+                <input
+                    type="text"
+                    id="search-input"
+                    class="search-input"
+                    placeholder="Search movies, anime, shows..."
+                    autocomplete="off"
+                /> 
+                <button id="search-button" class="search-button">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="content-container">
+            <div class="featured-content"
+                style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #151515), url('img/f-1.jpg');">
+                <img class="featured-title" src="img/f-t-1.png" alt="">
+                <p class="featured-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi possimus inventore atque id vero excepturi animi minus, ducimus consequatur aspernatur!
+                </p>
+                <button class="featured-button">WATCH</button>
+            </div>
+            <div id="search-results-container" class="movie-list-container" style="display: none;">
+                <h1 class="movie-list-title">SEARCH RESULTS</h1>
+                <div class="movie-list-wrapper">
+                    <div id="search-results" class="movie-list">
+                    </div>
+                </div>
+            </div>
+            <div id="dynamic-lists-root"></div>
+     </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
