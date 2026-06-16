@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <meta name="referrer" content="no-referrer-when-downgrade" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="theme-color" content="#151515" />
+    <meta name="author" content="ZyroMovies" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="home.css?v=home2">
+    <link rel="canonical" href="https://zyromovie.onrender.com/" />
+    <meta
+        name="description"
+        content="ZyroMovies (Zyro Movies / Zyro Movie) — watch movies, anime and TV shows online free in HD. Fast streaming, daily updates, infinity castle and more."
+    />
+    <meta
+        name="keywords"
+        content="zyro movies, zyromovies, ZyroMovies, zyro movie, watch movies online, watch online free, anime streaming, tv shows online, hd streaming, infinity castle, demon slayer movie"
+    />
+    <meta property="og:site_name" content="ZyroMovies" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:title" content="Zyro Movie | Zyro Movies - Watch Movies, Anime and TV Shows" />
+    <meta
+        property="og:description"
+        content="Watch movies, anime and TV shows online on Zyro Movie (Zyro Movies) with fast playback and clean interface."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://zyromovie.onrender.com/" />
+    <meta property="og:image" content="https://zyromovie.onrender.com/img/1.jpeg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Zyro Movie | Zyro Movies - Watch Online" />
+    <meta name="twitter:description" content="Watch movies, anime and TV shows online on Zyro Movie with fast streaming." />
+    <meta name="twitter:image" content="https://zyromovie.onrender.com/img/1.jpeg" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <title>Zyro Movie | Zyro Movies - Watch Movies, Anime and TV Shows Online</title>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "ZyroMovies",
+        "alternateName": ["Zyro Movies", "Zyro Movie", "zyromovies", "zyro movies"],
+        "url": "https://zyromovie.onrender.com/",
+        "description": "Watch movies, anime and TV shows online on ZyroMovies.",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://zyromovie.onrender.com/?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "ZyroMovies",
+        "alternateName": ["Zyro Movies", "Zyro Movie"],
+        "url": "https://zyromovie.onrender.com/",
+        "logo": "https://zyromovie.onrender.com/img/1.jpeg"
+      }
+    </script>
+</head>
+
+<body class="home-page">
+
+      
+
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="logo-container">
+                <h1 class="logo"><a href="index.html" style="color: inherit; text-decoration: none;">
+                    ZyroMovies
+                  </a></h1>
+            </div>
+            <div class="search-container">
+                <input
+                    type="text"
+                    id="search-input"
+                     class="search-input"
+                    placeholder="Search..."
+                    autocomplete="off"
+                /> 
+                <button id="search-button" class="search-button">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            <div class="blog-nav-links">
+                <a href="blog.html" class="site-blog-link">BLOG</a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="content-container">
+            <div id="banner-slider-root" class="banner-slider-root" style="display: none;"></div>
+            
+            <div id="dynamic-lists-root"></div>
+        </div>
+    </div>
+
+    <footer class="site-footer-nav">
+        <a href="blog.html" class="site-blog-link">BLOG</a>
+    </footer>
+
+    <div id="search-modal" class="search-modal" hidden aria-hidden="true">
+        <div class="search-modal-backdrop" data-search-close></div>
+        <div class="search-modal-panel" role="dialog" aria-modal="true" aria-labelledby="search-modal-title">
+            <div class="search-modal-header">
+                <h2 id="search-modal-title" class="search-modal-title">Search</h2>
+                <button type="button" id="search-modal-close" class="search-modal-close" aria-label="Close search">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <p id="search-modal-query" class="search-modal-query"></p>
+            <div id="search-modal-results" class="search-modal-results"></div>
+            <p id="search-modal-empty" class="search-modal-empty" hidden>No movies found. Try another name or tag.</p>
+        </div>
+    </div>
+
+    <script src="api-config.js"></script>
+    <script src="site-guard.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
